@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
   <link rel="stylesheet" href="style.css" />
   <title>Contact - Nero</title>
 </head>
@@ -20,18 +24,92 @@
 
   <section class="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
-    <form action="#">
-      <div class="input-box">
-        <input type="text" placeholder="Full Name" required />
-        <input type="email" placeholder="Email Address" required />
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Let's Work Together</h3>
+        <p>I'm always interested in new opportunities and exciting projects. Whether you have a project in mind, want to collaborate, or just want to say hello, feel free to reach out!</p>
+        
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>nero.developer@email.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+94 77 123 4567</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Colombo, Sri Lanka</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Response Time</h4>
+              <p>Within 24 hours</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
       </div>
-      <div class="input-box">
-        <input type="number" placeholder="Phone Number" />
-        <input type="text" placeholder="Subject" />
+      
+      <div class="contact-form">
+        <form action="#" method="POST">
+          <div class="input-group">
+            <div class="input-field">
+              <input type="text" name="firstName" placeholder="First Name" required />
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="input-field">
+              <input type="text" name="lastName" placeholder="Last Name" required />
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+          
+          <div class="input-group">
+            <div class="input-field">
+              <input type="email" name="email" placeholder="Email Address" required />
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="input-field">
+              <input type="tel" name="phone" placeholder="Phone Number" />
+              <i class="fas fa-phone"></i>
+            </div>
+          </div>
+          
+          <div class="input-field">
+            <input type="text" name="subject" placeholder="Subject" required />
+            <i class="fas fa-tag"></i>
+          </div>
+          
+          <div class="input-field">
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+            <i class="fas fa-comment"></i>
+          </div>
+          
+          <button type="submit" class="btn">
+            <i class="fas fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
       </div>
-      <textarea placeholder="Your Message" required></textarea>
-      <input type="submit" value="Send Message" class="btn" />
-    </form>
+    </div>
   </section>
 </body>
 </html>
