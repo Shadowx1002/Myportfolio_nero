@@ -229,7 +229,7 @@ span{
     21%, 40%{ content: "Full Stack Developer"; }
     41%, 60%{ content: "Web Designer"; }
     61%, 80%{ content: "Youtuber"; }
-    81%, 100%{ content: "Script Writer"; }
+    81%, 100%{ content: "Programmer"; }
 }
 
 /* ================= Skills Section ================= */
@@ -1193,4 +1193,6 @@ span{
     }
 
     .home-content h1{
-        font-size:
+        font-size: 3.5rem;
+    }
+}
