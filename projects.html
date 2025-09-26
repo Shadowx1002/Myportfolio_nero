@@ -13,6 +13,11 @@
 <body>
   <header>
     <a href="index.html" class="logo">Nero</a>
+    
+    <div class="menu-icon" id="menu-icon">
+      <i class="fas fa-bars"></i>
+    </div>
+    
     <nav>
       <a href="index.html">Home</a>
       <a href="skills.html">Skills</a>
@@ -198,5 +203,22 @@
       </div> -->
     </div>
   </section>
+  
+  <script>
+    // Mobile menu toggle
+    const menuIcon = document.getElementById('menu-icon');
+    const nav = document.querySelector('nav');
+    
+    menuIcon.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+    
+    // Close menu when clicking on a link
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>
